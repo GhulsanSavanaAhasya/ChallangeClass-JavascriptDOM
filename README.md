@@ -3,7 +3,7 @@
 ---
 
 ## Section 2 
-1 Use Case Dengan 3 Contoh
+3 Contoh Dengan 1 Use Case
 
 in section2.html
 ```
@@ -26,7 +26,7 @@ element.style.textAlign = "center";
 ---
 
 ## section 3
-1 Use Case Dengan 3 Contoh
+3 Contoh Dengan 1 Use Case
 
 in section3.html
 ```
@@ -56,5 +56,48 @@ console.log(childTerakhir.lastElementChild)
 let semuaChild = document.getElementById("menu")
 let child = menu.children
 console.log(child)
+...
+```
+
+--- 
+
+## Section 4
+3 Contoh Dengan 1 Use Case
+
+in section4.html
+```
+...
+<h1>Minuman favoritku!</h1>
+    <ul id="minuman-favorit">
+        <li>Fanta</li>
+        <li>Es teh</li>
+        <li>Cocacola</li>
+        <li>Air putih</li>
+    </ul>
+...
+```
+
+in section4.js
+```
+...
+// ================ Contoh 1 =======================
+// menampilkan isi list
+let contoh1 = document.getElementById("minuman-favorit")
+console.log(contoh1.innerHTML)
+
+// ================ Contoh 2 ========================
+// menambahkan list baru
+let contoh2 = document.getElementById("minuman-favorit")
+let list = document.createElement("li")
+list.textContent = "Es jeruk"
+// masukkan kedala element ul
+contoh2.appendChild(list)
+
+console.log(contoh2.innerHTML)
+
+// ================ Contoh 3 ========================
+let contoh3 = document.getElementById("minuman-favorit")
+// menghilangkan semua list
+contoh3.innerHTML = ""
 ...
 ```
