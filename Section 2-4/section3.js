@@ -1,12 +1,15 @@
-// get first child element
+// ===================== Contoh 1 =========================
+// mendapatkan elemen anak pertama
 let childPertama = document.getElementById("menu")
 console.log(childPertama.firstElementChild)
 
-// get last child element
+// ===================== Contoh 2 =========================
+// mendapatkan elemen anak terakhir
 let childTerakhir = document.getElementById("menu")
 console.log(childTerakhir.lastElementChild)
 
-// get all child elements
-let semuaChild = document.getElementById("menu")
+// ===================== Contoh 3 =========================
+// mendapatkan semua elemen anak
+let allChild = document.getElementById("menu")
 let child = menu.children
 console.log(child)
