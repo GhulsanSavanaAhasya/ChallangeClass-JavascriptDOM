@@ -2,8 +2,8 @@
 
 ---
 
-## Section 2 
-3 Contoh Dengan 1 Use Case
+## Section 2
+Section 2 - getElementById()
 
 in section2.html
 ```
@@ -29,7 +29,7 @@ element.style.textAlign = "center";
 ---
 
 ## section 3
-3 Contoh Dengan 1 Use Case
+Section 3 - Get Child Elements
 
 in section3.html
 ```
@@ -65,10 +65,10 @@ console.log(child)
 ...
 ```
 
---- 
+---
 
 ## Section 4
-3 Contoh Dengan 1 Use Case
+Section 4 - InnerHTML
 
 in section4.html
 ```
@@ -111,7 +111,7 @@ contoh3.innerHTML = ""
 ---
 
 ## Section 4-2
-3 Contoh Dengan 1 Use Case
+Section 4-2 - CreateElement
 
 in section4-2.html
 ```
@@ -151,9 +151,12 @@ list.textContent = "Bermain game"
 menu.appendChild(list)
 ...
 ```
+
 ---
 
 ## Section 5
+Section 5 - setAttribute
+
 in section 5.html
 ```
 ...
@@ -183,6 +186,8 @@ if (btnClick){
 ---
 
 ## Section 6
+Section 6 - Style
+
 in section6.html
 ```
 ...
@@ -190,3 +195,105 @@ in section6.html
 <p id="paragraph">Perkenalkan nama saya Ghulsan Savana Ahasya.</p>
 ...
 ```
+
+in section6.js
+```
+...
+// ===================== Contoh 1 =================
+// mengubah warna style h1 menjadi merah
+let h1 = document.querySelector("#title")
+h1.style.color = "red"
+
+// ===================== Contoh 2 =================
+// mengubah font style h1 menjadi miring
+let p = document.querySelector("#paragraph")
+p.style.fontWeight = "bold"
+...
+```
+---
+## Section 7
+Section 7 - Events
+
+in section7.html
+```
+...
+    <div>
+        <input type="text" name="username" id="username">
+    </div>
+
+    <div>
+        <input type="number" name="number" id="number">
+    </div>
+...
+```
+
+in section7.js
+```
+...
+// ============== Contoh 1 ===================
+// membuat input menjadi focus ketika di klik
+const focus = document.getElementById("username")
+focus.addEventListener("focus", (event) => {
+    event.target.value = "Keren"
+})
+
+// ============== Contoh 2 ===================
+// membuat input menjadi berubah warna tulisan ketika di klik
+const blur = document.getElementById("number")
+blur.addEventListener("blur", (event) => {
+    event.target.style.color = "red"
+})
+...
+```
+---
+
+## Section 8
+Section 8 - Radio
+
+in section8.html
+```
+...
+        <h1>Makanan favoritmu</h1>
+
+        <p>Pilih makanan kesukaanmu:</p>
+        <div>
+          <input type="radio" name="makanan" value="Rendang" id="rendang" />
+          <label for="rendang">Rendang</label>
+        </div>
+        <div>
+          <input type="radio" name="makanan" value="Ayam" id="ayam" />
+          <label for="ayam">Ayam</label>
+        </div>
+        <div>
+          <input type="radio" name="makanan" value="Telur" id="telur" />
+          <label for="telur">Telur</label>
+        </div>
+
+        <p>
+          <button id="btn">Show Selected Value</button>
+        </p>
+
+        <p id="output"></p>
+...
+```
+
+in section8.js
+```
+...
+// menampilkan teks yg dipilih jika tidak menampilkan kamu tidak memilih makanan kesukaanmu
+const btn = document.querySelector("#btn");        
+        const radioButtons = document.querySelectorAll("input[name='makanan']");
+        btn.addEventListener("click", () => {
+            let selectedMakanan;
+            for (const radioButton of radioButtons) {
+                if (radioButton.checked) {
+                    selectedMakanan = radioButton.value;
+                    break;
+                }
+            }
+            // show the output:
+            output.innerText = selectedMakanan ? `Kamu memilih ${selectedMakanan}` : `Kamu tidak memilih makanan kesukaanmu`;
+        });
+...
+```
+---
