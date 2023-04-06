@@ -179,3 +179,14 @@ if (btnClick){
 }
 ...
 ```
+
+---
+
+## Section 6
+in section6.html
+```
+...
+<h1 id="title">Selamat Datang Di Websiteku</h1>
+<p id="paragraph">Perkenalkan nama saya Ghulsan Savana Ahasya.</p>
+...
+```
