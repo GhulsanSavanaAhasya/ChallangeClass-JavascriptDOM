@@ -17,8 +17,11 @@ in section2.js
 ...
 const element = document.getElementById("intro");
 
+// ===================== Contoh 1 =========================
 element.style.color = "blue";
+// ===================== Contoh 2 =========================
 element.style.fontWeight = "bold";
+// ===================== Contoh 3 =========================
 element.style.textAlign = "center";
 ...
 ```
@@ -44,16 +47,19 @@ in section3.html
 in section3.js
 ```
 ...
-// get first child element
+// ===================== Contoh 1 =========================
+// mendapatkan elemen anak pertama
 let childPertama = document.getElementById("menu")
 console.log(childPertama.firstElementChild)
 
-// get last child element
+// ===================== Contoh 2 =========================
+// mendapatkan elemen anak terakhir
 let childTerakhir = document.getElementById("menu")
 console.log(childTerakhir.lastElementChild)
 
-// get all child elements
-let semuaChild = document.getElementById("menu")
+// ===================== Contoh 3 =========================
+// mendapatkan semua elemen anak
+let allChild = document.getElementById("menu")
 let child = menu.children
 console.log(child)
 ...
