@@ -107,3 +107,75 @@ let contoh3 = document.getElementById("minuman-favorit")
 contoh3.innerHTML = ""
 ...
 ```
+
+---
+
+## Section 4-2
+3 Contoh Dengan 1 Use Case
+
+in section4-2.html
+```
+...
+<h1>Intro</h1>
+    <p>Halo Namaku Ghulsan Savana Ahasya</p>
+
+    <h2>Hobiku</h2>
+
+    <ul id="menu">
+        <li>Olahraga</li>
+        <li>Membaca buku</li>
+    </ul>
+...
+```
+
+in section4-2.js
+```
+...
+// ======================== Contoh 1 ========================
+// membuat element baru div
+let div = document.createElement("div")
+div.id = "container-hobi"
+div.innerHTML = "<p>ini adalah div</p>"
+document.body.appendChild(div)
+
+// ======================== Contoh 2 ========================
+// membuat element baru p
+let paragraf = document.createElement("p")
+paragraf.innerHTML = "<p>diantara hobiku tersebut aku paling senang bermain game.</p>"
+document.body.appendChild(paragraf)
+
+// ======================== Contoh 3 ========================
+// membuat list item baru
+let list = document.createElement("li")
+list.textContent = "Bermain game"
+menu.appendChild(list)
+...
+```
+---
+
+## Section 5
+in section 5.html
+```
+...
+<button id="submit">Submit</button>
+...
+```
+
+in section5.js
+```
+...
+//======================= Contoh 1 ===================
+//membuat button disabled
+let btnSubmit = document.querySelector("#submit")
+if (btnSubmit){
+    btnSubmit.setAttribute("disabled", "")
+}
+
+//======================= Contoh 2 ===================
+// melakukan set value attribut name menjadi send
+let btnClick = document.querySelector("#submit")
+if (btnClick){
+    btnClick.setAttribute("name", "send")
+}
+...
+```

@@ -1,3 +1,4 @@
+// menampilkan teks yg dipilih jika tidak menampilkan kamu tidak memilih makanan kesukaanmu
 const btn = document.querySelector("#btn");        
         const radioButtons = document.querySelectorAll("input[name='makanan']");
         btn.addEventListener("click", () => {
